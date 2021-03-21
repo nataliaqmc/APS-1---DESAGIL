@@ -42,11 +42,39 @@ public class Testador {
 	}
 
 	public boolean testeD() {
-		return false;
+		Carrinho carrinho = new Carrinho();
+		Produto produto1 = new Produto(4,"Banana", 2);
+		Produto produto2 = new Produto(28, "Leite", 5);
+		
+		carrinho.insere(produto1);
+		carrinho.insere(produto2);
+		carrinho.insere(produto2);
+		
+		Caixa caixa = new Caixa();
+		caixa.insereDesconto(produto1, 50);
+		
+		if (caixa.total(carrinho)== 11.00) {
+			return true;
+		}
+	    return false;
 	}
 
 	public boolean testeE() {
-		return false;
+		Carrinho carrinho = new Carrinho();
+		Produto produto1 = new Produto(4,"Banana", 2);
+		Produto produto2 = new Produto(28, "Leite", 5);
+		
+		carrinho.insere(produto1);
+		carrinho.insere(produto1);
+		carrinho.insere(produto2);
+		
+		Caixa caixa = new Caixa();
+		caixa.insereDesconto(produto1, 50);
+		
+		if (caixa.total(carrinho)== 7.00) {
+			return true;
+		}
+	    return false;
 	}
 
 }
