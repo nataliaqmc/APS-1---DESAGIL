@@ -7,10 +7,6 @@ import org.junit.jupiter.api.Test;
 
 class TestadorTest {
 
-	@Test
-	void test() {
-		fail("Not yet implemented");
-	}
 	private Testador t;
 
 	@BeforeEach

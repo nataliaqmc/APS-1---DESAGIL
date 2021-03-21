@@ -14,7 +14,7 @@ public class Testador {
 
 	public boolean testeB() {
 		Carrinho carrinho = new Carrinho();
-		Produto produto = new Produto(4,"Banana",2);
+		Produto produto = new Produto(4,"Brahma",2);
 		
 		carrinho.insere(produto);
 		
@@ -28,7 +28,7 @@ public class Testador {
 
 	public boolean testeC() {
 		Carrinho carrinho = new Carrinho();
-		Produto produto = new Produto(4,"Banana",12.00);
+		Produto produto = new Produto(4,"Skol",12.00);
 		
 		carrinho.insere(produto);
 		
@@ -43,8 +43,8 @@ public class Testador {
 
 	public boolean testeD() {
 		Carrinho carrinho = new Carrinho();
-		Produto produto1 = new Produto(4,"Banana", 2);
-		Produto produto2 = new Produto(28, "Leite", 5);
+		Produto produto1 = new Produto(4,"Antartica", 2);
+		Produto produto2 = new Produto(28, "Heineken", 5);
 		
 		carrinho.insere(produto1);
 		carrinho.insere(produto2);
